@@ -103,7 +103,7 @@ mkdir -p build/classes build/libs
 # 4. Compile sources
 echo "Compiling Java sources..."
 SOURCES=$(find src -name "*.java")
-"$JAVAC_BIN" --release 21 -cp "$CP" -d build/classes $SOURCES
+"$JAVAC_BIN" --release 21 -proc:none -cp "$CP" -d build/classes $SOURCES
 
 # 5. Copy resources
 echo "Copying mod resources..."

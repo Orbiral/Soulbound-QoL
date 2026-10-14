@@ -58,7 +58,7 @@ if exist "%MODRINTH_PROFILE%\.fabric\processedMods" (
 
 REM 6. Compile sources
 echo Compiling Java sources...
-"%JAVAC_BIN%" --release 21 -cp "!CP!" -d build\classes @"%SOURCES_FILE%"
+"%JAVAC_BIN%" --release 21 -proc:none -cp "!CP!" -d build\classes @"%SOURCES_FILE%"
 set "BUILD_STATUS=%ERRORLEVEL%"
 if exist "%SOURCES_FILE%" del "%SOURCES_FILE%"
 

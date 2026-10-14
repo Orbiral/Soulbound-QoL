@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "soulbound-qol",
+  "version": "1.0.0",
+  "name": "Soulbound QoL",
+  "description": "Quality of life improvements and balance fixes for Soulbound Turn Battle.",
+  "authors": [
+    "Orbiral"
+  ],
+  "contact": {
+    "sources": "https://github.com/Orbiral/Soulbound-QoL",
+    "issues": "https://github.com/Orbiral/Soulbound-QoL/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.orbiral.soulboundqol.SoulboundQoL"
+    ]
+  },
+  "mixins": [
+    "soulbound-qol.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.1",
+    "turnbattle": "*"
+  }
+}

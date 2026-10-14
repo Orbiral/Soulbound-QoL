@@ -1,0 +1,20 @@
+# Build outputs
+build/
+*.class
+*.jar
+!libs/*.jar
+.ci-libs/
+
+# Test outputs
+TestQoLZulu*
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db

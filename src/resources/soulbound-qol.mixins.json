@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.orbiral.soulboundqol.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BattleManagerMixin",
+    "LiveCombatMixin",
+    "SoulItemMixin",
+    "SoulWalkMixin"
+  ],
+  "client": [
+    "RecruitSkinManagerMixin",
+    "DarkWorldFallMixin",
+    "PlayerActionsMixin",
+    "BipedEntityModelMixin",
+    "PlayerEntityRendererMixin",
+    "ClientPlayerEntityMixin",
+    "EntityPoseMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
